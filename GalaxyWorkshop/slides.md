@@ -3,7 +3,7 @@
 ![Cover art](images/cover_art.png) <!-- .element width="60%" -->
 
 <div class="footnotes">
-(These slides can be accessed via: <a href="https://tinyurl.com/GalaxyWorkshop">tinyurl.com/GalaxyWorkshop</a>)
+(These slides can be accessed via: <a href="https://bit.ly/galaxy-workshop">bit.ly/galaxy-workshop</a>)
 </div>
 
 ---
@@ -20,7 +20,7 @@ These slides will help you to:
 <br><br>
 
 <div class="footnotes">
-(These slides can be accessed via: <a href="https://tinyurl.com/GalaxyWorkshop">tinyurl.com/GalaxyWorkshop</a>)
+(These slides can be accessed via: <a href="https://bit.ly/galaxy-workshop">bit.ly/galaxy-workshop</a>)
 </div>
 
 ---
@@ -36,7 +36,7 @@ These slides will help you to:
 <br><br>
 
 <div class="footnotes">
-(These slides can be accessed via: <a href="https://tinyurl.com/GalaxyWorkshop">tinyurl.com/GalaxyWorkshop</a>)
+(These slides can be accessed via: <a href="https://bit.ly/galaxy-workshop">bit.ly/galaxy-workshop</a>)
 </div>
 
 
@@ -55,7 +55,7 @@ These slides will help you to:
 <br><br>
 
 <div class="footnotes">
-(These slides can be accessed via: <a href="https://tinyurl.com/GalaxyWorkshop">tinyurl.com/GalaxyWorkshop</a>)
+(These slides can be accessed via: <a href="https://bit.ly/galaxy-workshop">bit.ly/galaxy-workshop</a>)
 </div>
 
 ----
@@ -72,7 +72,7 @@ UseGalaxyEU offers Training Infrastructure as a Service (TIaaS)
 <br><br>
 
 <div class="footnotes">
-(These slides can be accessed via: <a href="https://tinyurl.com/GalaxyWorkshop">tinyurl.com/GalaxyWorkshop</a>)
+(These slides can be accessed via: <a href="https://bit.ly/galaxy-workshop">bit.ly/galaxy-workshop</a>)
 </div>
 
 ---
@@ -89,6 +89,6 @@ UseGalaxyEU offers Training Infrastructure as a Service (TIaaS)
 
 
 <div class="footnotes">
-(These slides can be accessed via: <a href="https://tinyurl.com/GalaxyWorkshop">tinyurl.com/GalaxyWorkshop</a>)
+(These slides can be accessed via: <a href="https://bit.ly/galaxy-workshop">bit.ly/galaxy-workshop</a>)
 </div>
 
