@@ -15,4 +15,3 @@ layout: base
 
 Date | Event | Location | Slides
 --- | --- | --- | ---
-[slides](/2019/02_20_galaxy_training_network/)
