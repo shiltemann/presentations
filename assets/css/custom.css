@@ -48,7 +48,7 @@ img{
 }
 
 .reveal .slides {
-    font-size: 0.82em;
+    font-size: 0.8em;
 }
 
 .footnote {
@@ -77,6 +77,11 @@ html.dim-background-2 .slide-background.present {
     text-align: right;
 }
 
+/* Slide-specific vertical centering override */
+.reveal .slides section[data-vertical-align-top]{
+	top: 0 !important;
+}
+
 #left {
   left:-8.33%;
   text-align: left;
@@ -96,9 +101,80 @@ html.dim-background-2 .slide-background.present {
 
 
 .reveal div.footnotes {
+    /*position: fixed;
+    bottom: 0%;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);*/
     float: bottom;
+    text-align: center;
 	font-size: 0.7em;
     color: gray;
-    text-align: center;
 
 }
+
+.reveal div.left {
+    float: left;
+    width: 45%;
+    margin-left: 5%;
+}
+
+.reveal div.left70{
+    float: left;
+    width: 65%;
+    margin-left:5%;
+    font-size: 0.7em;
+}
+
+.reveal div.left30{
+  float: left;
+  width: 25%;
+  margin-left: 5%;
+  font-size: 0.7em;
+
+}
+
+.reveal div {
+  text-align: left;
+}
+
+.reveal div.right {
+    float: right;
+    width: 45%;
+    margin-right: 5%;
+    font-size: 0.7em;
+}
+
+.reveal div.right70{
+  float: right;
+  width: 65%;
+  margin-right:5%;
+  font-size: 0.7em;
+
+}
+
+.reveal div.right30 {
+    float: right;
+    width: 25%;
+    margin-right: 5%;
+    font-size: 0.7em;
+
+}
+
+
+/* 3-column format */
+.reveal div.three-left {
+    float: left;
+    width: 30%;
+    margin-left: 5%;
+}
+.reveal div.three-middle {
+	display: inline-block;
+    width: 30%;
+}
+.reveal div.three-right{
+    float: right;
+    width: 30%;
+    margin-right: 5%;
+}
+

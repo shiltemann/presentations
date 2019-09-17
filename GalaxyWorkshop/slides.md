@@ -23,15 +23,40 @@ These slides will help you to:
 (These slides can be accessed via: <a href="https://bit.ly/galaxy-workshop">bit.ly/galaxy-workshop</a>)
 </div>
 
+----
+## Sticky Notes
+
+<div class="left70">
+<br><br>
+<strong>Status indicators</strong>
+<ul>
+ <li> <span style="color:pink"><i class="fa fa-sticky-note" aria-hidden="true"></i></span> Pink: Put on screen when you have a question</li>
+ <li> <span style="color:lightgreen"><i class="fa fa-sticky-note" aria-hidden="true"></i></span> Green: Used to indicate your progress</li>
+</ul>
+  <br><br><br>
+<strong>End-of-day feedback</strong>
+<ul>
+ <li> <span style="color:lightgreen"><i class="fa fa-sticky-note" aria-hidden="true"></i></span> Green: What did you like?</li>
+ <li> <span style="color:pink"><i class="fa fa-sticky-note" aria-hidden="true"></i></span> Pink: What could we improve tomorrow? </li>
+ <li> Leave on blackboard at end of the day </li>
+</ul>
+</div>
+
+<div class="right30">
+
+![scale](images/stickynotes.jpeg)
+![scale](images/stickynotes_feedback.png)
+
+</div>
+
 ---
 ## Logging into Galaxy
 
 1. Open Galaxy: [https://usegalaxy.eu](https://usegalaxy.eu)
 
-2. Log in to Galaxy (top right)
+2. Log in or register (top right)
 
-3. No account yet? Register (top right)
-  - Verify your registration (e-mail confirmation)
+3. Verify registration (e-mail confirmation)
 
 <br><br>
 
@@ -58,6 +83,8 @@ These slides will help you to:
 (These slides can be accessed via: <a href="https://bit.ly/galaxy-workshop">bit.ly/galaxy-workshop</a>)
 </div>
 
+Note: press down arrow after this slide to show info on TIaaS
+
 ----
 
 ## TIaaS
@@ -77,18 +104,42 @@ UseGalaxyEU offers Training Infrastructure as a Service (TIaaS)
 
 ---
 
-## Training Manual
+## Training Manual [Part 1]
 
 <br>
 
-1. Navigate to [training.galaxyproject.org](https://training.galaxyproject.org)
+1. Open [training.galaxyproject.org](https://training.galaxyproject.org)
 2. Topic: **Introduction to Galaxy Analyses**
-3. Tutorial: **Galaxy 101** (Hands-on)
+3. Tutorial: **A short introduction to Galaxy Analysis**
+   - Open hands-on manual <i class="fa fa-laptop" aria-hidden="true"></i>
 
-![](images/training_website_screenshot.png) <!-- .element width="50%" -->
-
+<br><br>
 
 <div class="footnotes">
 (These slides can be accessed via: <a href="https://bit.ly/galaxy-workshop">bit.ly/galaxy-workshop</a>)
 </div>
 
+---
+
+## Training Manual [Part 2]
+
+<br>
+
+1. Open [training.galaxyproject.org](https://training.galaxyproject.org)
+2. Topic: **Variant Analysis**
+3. Tutorial: **Exome sequencing data analysis for diagnosing a genetic disease**
+   - Open hands-on manual <i class="fa fa-laptop" aria-hidden="true"></i>
+
+<br><br>
+
+<div class="footnotes">
+(These slides can be accessed via: <a href="https://bit.ly/galaxy-workshop">bit.ly/galaxy-workshop</a>)
+</div>
+
+---
+
+## Feedback
+
+- Comments? Suggestions? Fill in feedback form at end of tutorial to help us improve these materials!
+
+![](images/feedback.jpg) <!-- .element width="50%" -->

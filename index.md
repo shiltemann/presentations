@@ -8,7 +8,7 @@ layout: base
 
 ## Galaxy Workshop setup slides
 
-[slides](/slides/GalaxyWorkshop)
+[bit.ly/galaxy-workshop](/slides/GalaxyWorkshop)
 
 
 ## 2019
