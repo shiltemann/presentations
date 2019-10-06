@@ -13,6 +13,7 @@
 
 These slides will help you to:
 
+1. Join participant chat
 1. Log in to Galaxy
 2. Join the training priority queue
 3. Find the Training Manual
@@ -23,7 +24,7 @@ These slides will help you to:
 (These slides can be accessed via: <a href="https://bit.ly/galaxy-workshop">bit.ly/galaxy-workshop</a>)
 </div>
 
-----
+---
 ## Sticky Notes
 
 <div class="left70">
@@ -50,6 +51,23 @@ These slides will help you to:
 </div>
 
 ---
+
+## Joining Participant chat
+
+- Chat document: [https://bit.ly/gallantries-chat]( https://bit.ly/gallantries-chat)
+
+- Ask questions to your remote instructor
+- Know the answer to somebody's question? Answer it!
+
+<br><br>
+
+<div class="footnotes">
+(These slides can be accessed via: <a href="https://bit.ly/galaxy-workshop">bit.ly/galaxy-workshop</a>)
+</div>
+
+---
+
+
 ## Logging into Galaxy
 
 1. Open Galaxy: [https://usegalaxy.eu](https://usegalaxy.eu)
@@ -70,7 +88,7 @@ These slides will help you to:
 
 <br>
 
-1. Open [https://usegalaxy.eu/join-training/NGSdiagnostics](https://usegalaxy.eu/join-training/NGSdiagnostics])
+1. Open [https://usegalaxy.eu/join-training/gallantries](https://usegalaxy.eu/join-training/gallantries])
 2. You should see a green confirmation box
 3. You will now have access to
    - dedicated compute resources
@@ -104,6 +122,20 @@ UseGalaxyEU offers Training Infrastructure as a Service (TIaaS)
 
 ---
 
+## Training Manuals
+
+- Open [https://training.galaxyproject.org](https://training.galaxyproject.org)
+- Your instructors will tell you which manuals to open for each tutorial
+
+
+<br><br>
+
+<div class="footnotes">
+(These slides can be accessed via: <a href="https://bit.ly/galaxy-workshop">bit.ly/galaxy-workshop</a>)
+</div>
+
+----
+
 ## Training Manual [Part 1]
 
 <br>
@@ -119,7 +151,7 @@ UseGalaxyEU offers Training Infrastructure as a Service (TIaaS)
 (These slides can be accessed via: <a href="https://bit.ly/galaxy-workshop">bit.ly/galaxy-workshop</a>)
 </div>
 
----
+----
 
 ## Training Manual [Part 2]
 
