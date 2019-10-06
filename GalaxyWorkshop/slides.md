@@ -124,7 +124,7 @@ UseGalaxyEU offers Training Infrastructure as a Service (TIaaS)
 
 ## Training Manuals
 
-- Open [https://training.galaxyproject.org](https://training.galaxyproject.org)
+- Open [training.galaxyproject.org](https://training.galaxyproject.org)
 - Your instructors will tell you which manuals to open for each tutorial
 
 
