@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{{page.title}}</title>
+        <link rel="stylesheet" href="{{site.baseurl}}/reveal.js/css/reveal.css">
+        <link rel="stylesheet" href="{{site.baseurl}}/reveal.js/css/theme/simple.css" id="theme">
+        <!-- Code syntax highlighting -->
+        <link rel="stylesheet" href="{{site.baseurl}}/reveal.js/lib/css/zenburn.css">
+        <link rel="stylesheet" href="{{site.baseurl}}/assets/css/font-awesome.css">
+        <link rel="stylesheet" href="{{site.baseurl}}/assets/css/academicons.min.css">
+        <link rel="stylesheet" href="{{site.baseurl}}/assets/css/custom.css" id="theme">
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown data-separator="^---\n" data-separator-vertical="^----\n" data-separator-notes="^Note:">
+                <textarea data-template>
+
+
+                   {{ content }}
+
+
+                </textarea>
+                </section>
+            </div>
+        </div>
+        <script type="text/javascript" src="{{site.baseurl}}/reveal.js/lib/js/head.min.js"></script>
+        <script type="text/javascript" src="{{site.baseurl}}/reveal.js/js/reveal.js"></script>
+        <script type="text/javascript">
+            Reveal.initialize({
+                slideNumber: !window.location.search.match(/print-pdf/gi),
+                history: true,
+
+                theme: Reveal.getQueryHash().theme,
+                transition: Reveal.getQueryHash().transition || 'concave',
+
+                dependencies: [
+                    { src: '{{site.baseurl}}/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: '{{site.baseurl}}/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '{{site.baseurl}}/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '{{site.baseurl}}/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: '{{site.baseurl}}/reveal.js/plugin/math/math.js', async: true },
+                    { src: '{{site.baseurl}}/reveal.js/plugin/notes/notes.js', async: true },
+                ]
+            });
+        </script>
+    </body>
+</html>
