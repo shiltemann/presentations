@@ -1,0 +1,103 @@
+img {
+  width: 100%
+}
+
+.image-10 img {
+  width: 10%;
+}
+
+.image-25 img {
+  width: 25%;
+}
+
+.image-50 img{
+  width: 50%;
+}
+
+.image-75 img {
+  width: 75%;
+}
+
+.image-80 img {
+  width: 80%;
+}
+
+.image-90 img {
+  width: 90%;
+}
+
+
+
+.footnote {
+    position: absolute;
+    bottom: 1em;
+	left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.7em;
+    color: gray;
+}
+
+.left {
+    float: left;
+    width: 45%;
+    margin-left: 5%;
+}
+
+.left70{
+    float: left;
+    width: 65%;
+    margin-left:5%;
+    font-size: 0.7em;
+}
+
+.left30{
+  float: left;
+  width: 25%;
+  margin-left: 5%;
+  font-size: 0.7em;
+
+}
+
+.right {
+    float: right;
+    width: 45%;
+    margin-right: 5%;
+    font-size: 0.7em;
+}
+
+.right70{
+  float: right;
+  width: 65%;
+  margin-right:5%;
+  font-size: 0.7em;
+
+}
+
+.right30 {
+    float: right;
+    width: 25%;
+    margin-right: 5%;
+    font-size: 0.7em;
+
+}
+
+
+/* 3-column format */
+.three-left {
+    float: left;
+    width: 30%;
+    margin-left: 5%;
+}
+.three-middle {
+	display: inline-block;
+    width: 30%;
+}
+.three-right{
+    float: right;
+    width: 30%;
+    margin-right: 5%;
+}
+
+ul {
+  text-align: left;
+}
