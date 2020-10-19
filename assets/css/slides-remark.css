@@ -6,12 +6,32 @@ img {
   width: 10%;
 }
 
+.image-20 img {
+  width: 20%;
+}
+
 .image-25 img {
   width: 25%;
 }
 
+.image-30 img {
+  width: 30%;
+}
+
+.image-40 img {
+  width: 40%;
+}
+
 .image-50 img{
   width: 50%;
+}
+
+.image-60 img {
+  width: 60%;
+}
+
+.image-70 img {
+  width: 70%;
 }
 
 .image-75 img {
@@ -40,20 +60,17 @@ img {
 .left {
     float: left;
     width: 45%;
-    margin-left: 5%;
 }
 
 .left70{
     float: left;
     width: 65%;
-    margin-left:5%;
     font-size: 0.7em;
 }
 
 .left30{
   float: left;
   width: 25%;
-  margin-left: 5%;
   font-size: 0.7em;
 
 }
@@ -61,14 +78,12 @@ img {
 .right {
     float: right;
     width: 45%;
-    margin-right: 5%;
     font-size: 0.7em;
 }
 
 .right70{
   float: right;
   width: 65%;
-  margin-right:5%;
   font-size: 0.7em;
 
 }
@@ -76,7 +91,6 @@ img {
 .right30 {
     float: right;
     width: 25%;
-    margin-right: 5%;
     font-size: 0.7em;
 
 }
