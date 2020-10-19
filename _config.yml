@@ -1,9 +1,13 @@
 title: Presentations - Saskia Hiltemann
 email: saskiahiltemann@gmail.com
+baseurl: /presentations
 description: >
   Slides and posters from various presentations
-repository: "shiltemann/slides"
+repository: "shiltemann/presentations"
 twitter: shiltemann
 linkedin: saskiahiltemann
 gitter: shiltemann
 orcid: 0000-0003-3803-468X
+website: "https://shiltemann.github.io"
+
+permalink: /:year-:month-:day-:title
