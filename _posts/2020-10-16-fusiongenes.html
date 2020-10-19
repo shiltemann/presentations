@@ -1,9 +1,289 @@
 ---
-layout: slides-revealjs
-title: Fusion Gene detection
-event: PhD meeting
+layout: slides-remark
+title: Structural Variant Analysis
+event: EMC PhD meeting
 ---
 
-# Fusion Gene Detection
+# Structural Variant Analysis
 
 ---
+
+# Overview
+
+- What are Structural Variants (SV)?
+- How do we detect SVs?
+- Fusion Genes
+- Paper 1: iFUSE application for exploration of fusion genes
+- Paper 2: Analysis of the VCaP prostate cancer cell line
+
+.footnote[Chapter 3 from thesis]
+
+---
+
+# Structural Variants (SVs)
+
+- Large-scale genomic rearrangments (i.e. > 50bp)
+- Different types; deletion, translocation, inversion
+
+.image-75[ ![Overview of SV types]({{site.baseurl}}/images/cancer/svs.jpg)]
+
+---
+
+# Fusion Genes
+
+- When SV breakpoints occur within genes, can lead to formation of novel fusion genes and gene products
+- May disrupt the cell function
+
+.image-50[![]({{site.baseurl}}/images/structural-variants/fusion-gene.png)]
+
+---
+
+# Why SV detection?
+
+- SVs may serve as diagnostic markers
+- Example: Philadelphia chromosome
+  - associated with chronic myelogenous leukemia (CML)
+  - reciprocal translocation between chr9 and chr22
+  - diagnosis based on presence of this translocation
+
+.image-75[![]({{site.baseurl}}/images/structural-variants/philadelphia.png)]
+
+???
+
+---
+
+# TMPRSS2-ERG Fusion
+
+- Present in 40%-70% of prostate cancers
+- Urinary biomarker
+  - allowed for earlier detection
+  - non-invasive technique
+  - appears to be indicator of tumor aggressiveness
+- Deletion on chromosome 22 fuses two neighboring genes together:
+
+
+.image-75[![]({{site.baseurl}}/images/cancer/tmprss2erg-fusion.png)]
+
+
+
+
+---
+
+# Detection of SVs
+
+
+- Classic short read sequencing cannot detect SVs
+- Several strategies to detect SVs
+  - Read-depth, Read pair, Split read, de-novo assembly
+  - New: long read sequencing
+
+
+.image-75[ ![]({{site.baseurl}}/images/structural-variants/sv-detection-strategies.png)]
+
+
+???
+
+
+
+---
+
+# Read-depth methods
+
+.image-80[ ![]({{site.baseurl}}/images/structural-variants/sv-detection-readdepth.png) ]
+
+- Deletions and duplications exhibit decreased or increased read depth
+- Does not work for balanced (copy number neutral) SVs
+  -E.g. inversions or translocations
+
+???
+Read depth -- Reads are aligned into the reference genome and when compared to diploid regions they show a reduced number of reads in a deleted region or higher read depth in a duplicated region.
+
+---
+
+## Read-pair methods
+
+.image-90[ ![]({{site.baseurl}}/images/structural-variants/sv-detection-readpair.png) ]
+
+- E.g. mate-pair sequencng (paired-end sequencing with longer insert size)
+- SVs lead to unexpected order, orientation, or distance between mates
+
+
+???
+Paired reads -- Pairs of sequence reads are mapped into the reference genome (from left to right):
+  - (1) no SV, pairs are aligned into correct order, correct orientation and spanned as expected based on the library’s insert size;
+  - (2) deletion, the aligned pairs span far apart from that expected based on library insert size;
+  - (3) tandem duplication, read pairs are aligned in unexpected order, where expected order means that the leftmost read should be aligned in the forward strand and the rightmost read in the reverse strand;
+ - (4) novel sequence insertion, the pairs are aligned closer from that expected based on library insert size;
+ - (5) inversion, read pairs are aligned in wrong orientation, both reads align either in forward or reverse strand; and
+ - (6) read pairs mapped to different chromosomes.
+
+---
+
+# Other methods
+
+.left[
+
+- Split Read
+ - Reads must be long enough
+
+
+- de-novo
+  - assemble reads without a reference
+
+
+- long-read sequencing
+  - long enough to span the entire SV
+
+
+]
+
+.right[
+
+.image-90[ ![]({{site.baseurl}}/images/structural-variants/sv-detection-splitread.png) ]
+
+.image-90[ ![]({{site.baseurl}}/images/structural-variants/sv-detection-denovo.png) ]
+
+]
+
+???
+
+C) Split reads. Sequenced reads pointing to the same breakpoint are split at the nucleotide where the breakpoint occurs. The corresponding paired read is properly aligned to the reference genome.
+
+D) De novo assembly. Sample reads from novel sequence insertions are assembled without a reference sequenced genome.
+
+
+---
+
+# Complete Genomics
+
+- Sequencing company
+- mate-pair sequencing
+- local de-novo assembly to resolve SV junctions (breakpoints)
+
+.image-70[![]({{site.baseurl}}/images/structural-variants/pe-mp.png)]
+.image-30[![]({{site.baseurl}}/images/logos/complete-genomics.jpg)]
+
+---
+
+# SVs in practice
+
+- No standard format (usually custom table format or tortured VCF)
+- Not easy to interpret
+  - Often thousands of lines
+  - One line per breakpoint (but most events involve multiple breakpoints)
+- Need visualisation!
+
+.image-70[![]({{site.baseurl}}/images/structural-variants/cg-sv-format.png)]
+
+---
+
+# SVs to fusion genes
+
+- Determine which DNA breaks lead to fusion genes is not trivial
+  - Breakpoints must occur within genes
+  - in correct orientation
+  - in-frame
+
+
+- We built an application to allow researchers to explore SVs in a visual way
+  - iFUSE
+
+---
+
+# iFUSE application
+
+- Visual exploration of SVs
+  - prioritized by likelihood of leading to fusion gene
+  - predict protein sequenc
+
+.image-75[![]({{site.baseurl}}/images/cancer/ifuse.png)]
+
+.footnote[Thesis Chapter 0]
+
+---
+
+# Circos
+
+- Circular representation of whole-genome data
+- Good for visualizing genome-scale patterns
+- Very powerful, but very complex tool
+  - wrapped into Galaxy for accessibility (Thesis Chapter 0)
+
+![]({{site.baseurl}}/images/bioinformatics/circos.png)
+
+
+---
+
+# VCaP Cell line
+
+- Prostate Cancer cell line
+- Noticed something odd after visualisation with Circos
+
+.image-60[![]({{site.baseurl}}/images/structural-variants/vcap-circos-wg.png)]
+
+---
+
+# Chromosome plots
+
+![]({{site.baseurl}}/images/structural-variants/vcap-circos-perchrom.png)
+
+---
+
+# Chromothripsis
+
+- Shattering of (part of) DNA molecule in single catastrophic event
+- Followed by imprecise stitching back together by cell's repair mechanisms
+
+.image-50[![]({{site.baseurl}}/images/structural-variants/chromothripsis.gif)]
+
+- Signature
+  - Large number of SVs
+  - Alternations between small number of copy number states
+      - suggests the rearrangements were precipitated by a single catastrophic event
+
+
+---
+
+# VCaP
+
+- Chromothripsis on q arm of chromosome 5
+- SNP array for CNV data
+
+.left[![]({{site.baseurl}}/images/structural-variants/vcap-circos-chr5.png)]
+
+.right[![]({{site.baseurl}}/images/structural-variants/vcap-array-plot.webp)]
+
+---
+
+# Does this lead to fusion genes?
+
+- Has the potential of contributing to cancer progression
+  - e.g. activation of oncogenes, or inactivation of tumor suppressor genes.
+
+
+- Evaluated the 573 rearrangements involving chr5q using iFUSE
+  - 18 rearrangements were found to occur between two different genes at a consistent orientation,
+      - 2 predicted in-frame
+  - 16 confirmed on the DNA level using custom PCR.
+  - 5 also measured on the mRNA level,
+    - instability of the fusion transcripts or down-regulation of expression
+
+
+---
+
+# Conclusions
+
+- Chromothripsis occurs in prostate cancer
+- Chromothripsis does not preferentially impact coding regions
+- No positive selectioni for in-frame fusion transcripts
+- Researchers using VCaP cell line should take chromothripsis into account
+- VCaP cell line can serve as a model for chromothripsis
+
+- Visualisation is important!
+
+---
+
+# Thanks!
+
+
+
