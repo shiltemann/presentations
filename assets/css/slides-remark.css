@@ -47,6 +47,9 @@ img {
 }
 
 
+.small{
+  text-size: 0.7em;
+}
 
 .footnote {
     position: absolute;
@@ -65,34 +68,32 @@ img {
 .left70{
     float: left;
     width: 65%;
-    font-size: 0.7em;
+    /*font-size: 0.7em;*/
 }
 
 .left30{
   float: left;
   width: 25%;
-  font-size: 0.7em;
+  /*font-size: 0.7em;*/
 
 }
 
 .right {
     float: right;
     width: 45%;
-    font-size: 0.7em;
+    /*font-size: 0.7em;*/
 }
 
 .right70{
   float: right;
   width: 65%;
-  font-size: 0.7em;
-
+  /*font-size: 0.7em;*/
 }
 
 .right30 {
     float: right;
     width: 25%;
-    font-size: 0.7em;
-
+    /*font-size: 0.7em;*/
 }
 
 
