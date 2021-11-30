@@ -4,6 +4,7 @@ default: help
 
 clean: ## clean up junk files
 	@rm -rf _site
+	@rm -rf .jekyll-cache
 	@rm -rf .sass-cache
 	@rm -rf .bundle
 	@rm -rf vendor
