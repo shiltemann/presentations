@@ -27,7 +27,7 @@ title: Presentations (@shiltemann)
    <tbody>
   {% assign previous_year = current_year %}
  {% endif %}
- <tr><td>{{presentation.date| date: "%d-%m-%Y"}}</td><td><a href="{{site.baseurl}}/{{presentation.url}}">{{presentation.title}}</a></td><td>{{presentation.event}}</td></tr>
+ <tr><td>{{presentation.date| date: "%d-%m-%Y"}}</td><td><a href="{% if presentation.external %}{{presentation.external}}{% else %} {{site.baseurl}}/{{presentation.url}}{% endif %}">{{presentation.title}}</a></td><td>{{presentation.event}}</td></tr>
 {% endfor %}
 </tbody>
 </table>
